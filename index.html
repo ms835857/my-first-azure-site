@@ -1,10 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>My Azure Lab</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #121212;
+            color: white;
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        /* Animation: Fade in and slide up */
+        .content {
+            animation: fadeInUp 1.5s ease-out;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        /* Animation: Text color pulse */
+        .highlight {
+            color: #0070f3;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.7; }
+            100% { opacity: 1; }
+        }
+    </style>
 </head>
 <body>
-<h1>Hello, Azure!</h1>
-<p>This site was deployed using Azure Static Web Apps (Free Tier).</p>
+
+    <div class="content">
+        <h1>Hi, I'm <span class="highlight">Muhammad Saad - 243448</span></h1>
+        <p>Welcome to my digital space.</p>
+    </div>
+
 </body>
 </html>
